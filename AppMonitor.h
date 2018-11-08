@@ -20,6 +20,7 @@ typedef void (^action_block_t)(void);
 + (AppMonitor*)sharedInstance;
 
 - (void)addAction:(action_block_t)action forCondition:(condition_block_t)condition;
+- (void)doConditionalActions;
 - (void)logTap;
 - (id)objectForKey:(NSString *)key;
 - (void)setObject:(id)value forKey:(NSString *)key;
